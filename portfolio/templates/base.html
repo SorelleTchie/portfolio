@@ -1,0 +1,42 @@
+{% load bootstrap5 %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% bootstrap_messages %}
+<style>body{
+    background-color: #F5F5DC;
+}
+</style>
+
+<nav class="navbar-custom">
+    <div class="navbar-brand">
+        <span style="font-size:20px; font-family: cursive;">TCHIE AUDE SORELLE</span>
+        <h6 style="font-family:cursive">Aspiring Software Developer</h6>
+    </div>
+
+    <div class="nav-bar">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}" > HIRE ME </a>
+        </li>
+    </div>
+
+    <div class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'aboutme' %}">About Me</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'cv' %}">Curriculum Vitae</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+        </li>
+    </div>    
+    
+</nav>
+
+{% block content %}{% endblock %}
+

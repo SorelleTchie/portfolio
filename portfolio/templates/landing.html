@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div style="text-align:center; margin-left:15%; margin-right:15%; font-family:cursive;">
+        <h3>Welcome To My Portfolio!</h3>
+        <hr style="height:5px;">
+        <h3> IT'S NICE TO MEET YOU</h3>
+        <div class = "box">
+                <a href="{% static 'portfolio/Sorelle_Resume.pdf' %}" class="button">Download my Resume</a>
+                <a href="{% static 'portfolio/current_cv.pdf' %}" class="button">Download my CV</a>
+        </div>
+</div>
+  
+
+
+{% endblock %}

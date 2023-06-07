@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<body>
+    <div class="container">
+        <img src="{% static 'portfolio/my_picture.jpg' %}" alt="My Picture" class="rounded-image">
+        <div class="text-block" style="font-family:cursive;">
+        <h3 style="text-align: center;">About Me</h3>
+        <p style="font-size:18px">     Dedicated and proactive Software Developer specializing in Python
+            and Django, with a strong understanding of programming principles
+            acquired through extensive self-study and hands-on experience.
+            My rigorous self-study, passion for coding, and practical experience
+            makes me ready to tackle real-world programming challenges. I am eager 
+            to leverage my skills and enthusiasm in a professional setting, and
+             i am confident in my ability to make meaningful contributions from the start
+        </p>
+        </div>
+    </div>
+    
+    <div>
+        <h3 style="text-align:center; font-family:cursive;">SKILLS</h3>
+    </div>
+
+    <div class="progress-bar-container">
+        <div class="progress">
+            <div class="progress-bar" style="width: 70%;">PYTHON</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width: 70%;">DJANGO</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width: 30%;">HTML/CSS</div>
+        </div>
+    </div>
+    
+
+
+</body>
+
+{% endblock %}
