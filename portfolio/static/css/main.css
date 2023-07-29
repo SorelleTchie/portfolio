@@ -94,6 +94,15 @@ ul{
     justify-content: center;
     border-radius: 25px;
 }
+
+.box1{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
 .button{
     padding: 10px 20px;
     background-color: #11110e;
