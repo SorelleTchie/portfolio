@@ -18,7 +18,11 @@ def cv(request):
     return render(request,"cv.html")
 
 def contact(request):
-    if request.method == 'POST':
+    return render(request, "contact.html")
+    
+    
+    
+    """if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
             name = form.cleaned_data['name']
@@ -36,5 +40,5 @@ def contact(request):
     else:
         form = ContactForm()
     
-    return render(request, 'contact.html', {'form': form})
+    return render(request, 'contact.html', {'form': form}) """
   
