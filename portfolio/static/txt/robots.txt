@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /admin/
+Sitemap: https://sorelletchie-software-engineer-d78b1b1f0e23.herokuapp.com/
