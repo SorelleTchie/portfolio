@@ -1,39 +1,59 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block title %}About Me - Tchie Aude Sorelle{% endblock title %}
 
 {% block content %}
 <body>
-    <div class="container">
-        <img src="{% static 'portfolio/my_picture.jpg' %}" alt="My Picture" class="rounded-image">
-        <div class="text-block" style="font-family:cursive;">
-        <h3 style="text-align: center;">About Me</h3>
-        <p style="font-size:18px">     Dedicated and proactive Software Developer specializing in Python
-            and Django, with a strong understanding of programming principles
-            acquired through extensive self-study and hands-on experience.
-            My rigorous self-study, passion for coding, and practical experience
-            makes me ready to tackle real-world programming challenges. I am eager 
-            to leverage my skills and enthusiasm in a professional setting, and
-             i am confident in my ability to make meaningful contributions from the start
-        </p>
+    <section class="about-me">
+        <div class="profile-container">
+            <img src="{% static 'portfolio/my_picture.jpg' %}" alt="My professional portrait" class="rounded-image">
+            <div class="text-block">
+                <h2>About Me</h2>
+                <p>Embarking on a journey to become a proficient Software Engineer, I've immersed myself in the world of Python and Django through a rigorous self-learning path. My passion for technology and programming has driven me to acquire a deep understanding of these tools, laying a solid foundation for my skills in software development.
+
+                    Despite not having formal job experience in the field, my hands-on practice with personal and collaborative projects showcases my capability to apply programming principles effectively. I am committed to solving real-world problems by creating efficient, scalable, and maintainable software solutions.
+                    
+                    As I seek to transition into a professional setting, I am eager to bring my dedication, creativity, and problem-solving skills to a team that values innovation and continuous improvement. I am ready to contribute, learn, and grow as a Software Engineer, making meaningful impacts through technology.
+                    
+                    Please feel free to explore my portfolio to see examples of my work and the projects that I am proud of.
+                    
+                </p>
+            </div>
         </div>
-    </div>
-    
-    <div>
-        <h3 style="text-align:center; font-family:cursive;">SKILLS</h3>
+    </section>
+    <div class = "row">
+        <div class="column">
+                <div class="skill-card">
+                    <h3>Technical Skills:</h3>
+                        <P>Python (Intermediate)</P>
+                        <P>Django (Intermediate)</P>
+                        <P>Bootstrap (Intermediate)</P>
+                        <P>Panda (Novice)</P>
+                        <P>Numpy (Novice)</P>
+                        <P>MATPLOTLIB (Novice)</P>
+                </div>
+        </div>
+
+        <div class = "column">
+            <div class="skill-card">
+                <h3>Soft Skills:</h3>
+                    <P>Problem-solving (Strong)</P>
+                    <P>Communication (Strong)</P>
+                    <P>Time management (Strong)</P>
+                    <P>Teamwork (Strong)</P>
+                    <P>Leadership (strong)</P>
+            </div>
+        </div>
+
+        <div class = "column">
+            <div class="skill-card">
+                    <h3>Languages:</h3>
+                        <p>English (Native)</p>
+                        <p>French (Fluent)</p>
+            </div>
+        </div>
     </div>
 
-    <div class="progress-bar-container">
-        <div class="progress">
-            <div class="progress-bar" style="width: 70%;">PYTHON</div>
-        </div>
-        <div class="progress">
-            <div class="progress-bar" style="width: 70%;">DJANGO</div>
-        </div>
-        <div class="progress">
-            <div class="progress-bar" style="width: 30%;">HTML/CSS</div>
-        </div>
-    </div>
-    
 
 
 </body>

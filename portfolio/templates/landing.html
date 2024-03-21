@@ -1,17 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block title %}Landing- Tchie Aude Sorelle{% endblock title %}
 
 {% block content %}
-<div style="text-align:center; margin-left:15%; margin-right:15%; font-family:cursive;">
-        <h3>Welcome To My Portfolio!</h3>
+<main style="margin: 0 15%; font-family: cursive; text-align: center;">
+        <h1>Welcome To My Portfolio!</h1>
         <hr style="height:5px;">
-        <h3> IT'S NICE TO MEET YOU</h3>
+        <h2> IT'S NICE TO MEET YOU</h2>
         <div class = "box">
-                <a href="{% static 'portfolio/Software.pdf' %}" class="button">Download my Resume</a>
-                <a href="{% static 'portfolio/current_cv.pdf' %}" class="button">Download my CV</a>
+                <a href="{% static 'portfolio/Software_Engineering_resume.pdf' %}" class="button">Download my Resume</a>
         </div>
-</div>
+</main>
   
-
-
 {% endblock %}

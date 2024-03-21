@@ -1,16 +1,20 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact- Tchie Aude Sorelle{% endblock title %}
 
 {% block content %}
-<div style="text-align:center; margin-left:15%; margin-right:15%; font-family:cursive;">
-    <h3>THANK YOU!</h3>
+<main style="font-family: cursive; text-align: center; margin: 0 15%;">
+    <h2>THANK YOU!</h2>
     <hr style="height:5px;">
-    <div class="box1">
-        <h4> CONTACT</h4>
-        <h6> Phone Number: 6 92 24 15 18</h6>
-        <h6> WhatsApp: +237 6 92 24 15 18</h6>
-        <h6>Email: sorelletchie@gmail.com</h6>
-    </div>
-</div>
+    <section class="contact-info">
+        <h3> CONTACT</h3>
+        <address>
+            <p> Phone Number: <a href="tel:+692241518">6 92 24 15 18</a></p>
+            <p> WhatsApp: <a href="https://wa.me/237692241518">+237 6 92 24 15 18</a></p>
+            <p>Email: <a href="mailto:sorelletchie@gmail.com">sorelletchie@gmail.com</a></p>
+        </address>
+    </section>
+</main>
 {% endblock %}
  <!--   <form role="form" action="" method="post">
     {% csrf_token %}
