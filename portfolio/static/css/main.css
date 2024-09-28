@@ -1,16 +1,10 @@
 
-
 body{
     background-color: #F5F5DC;
 }
 
 .navbar-custom{
-    background-color:transparent;
-    display:flex;
-    justify-content: space-between;
-    padding:1em;
-    align-items: center;
-    overflow: hidden;
+    background-color: transparent;
 }
 
 .navbar-custom .navbar-brand,
@@ -18,29 +12,17 @@ body{
     color:#11110e;
 }
 
-.navbar-custom .navbar-nav .nav-link{
+.navbar-custom .nav-item .nav-link{
     color:#11110e;
+   
 }
 
-.navbar-brand{
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.navbar-nav{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar-nav .nav-item{
+.navbar-custom .nav-item{
     margin-left:1em;
     font-size: 20px;
     font-family: cursive;
     text-align: center;
 }
-
 
 .nav-bar .nav-link{
     color:#11110e;
@@ -48,13 +30,10 @@ body{
     font-family: cursive;
 }
 
-.navbar-toggler {
-    border-color: rgba(0,0,0,.1);
-  }
-  
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
+.footer{
+    position: fixed;
+    bottom: 0;   
+}
 
  /* This is where the base.html ends*/
 
