@@ -84,14 +84,7 @@ WSGI_APPLICATION = 'myportfolio.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'my-portfolio-db',
-        'USER':'sorelletchie',
-        'PASSWORD':'FvvVVIXCxJgm2J69gBvY',
-        'HOST':'my-portfolio-db.crc0omg42hsx.eu-north-1.rds.amazonaws.com',
-        'PORT':'5432',
-    }
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
 }
 
 
