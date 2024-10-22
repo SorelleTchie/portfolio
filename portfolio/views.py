@@ -37,7 +37,7 @@ def contact(request):
                 [settings.RECIPIENT_EMAIL],
                 fail_silently=False,
             )
-            return redirect('success_page')
+            return redirect('landing')
     else:
         form = ContactForm()
 
