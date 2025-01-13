@@ -13,7 +13,7 @@ phases:
       - echo "Build completed!"
 
 artifacts:
-  baseDirectory: /path/to/your/static/files
+  baseDirectory: /mnt/c/Users/sorel/sorelletchie-software-engineer/portfolio/static
   files:
     - '**/*'
   discardPaths: yes
