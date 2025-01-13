@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - pip install -r requirements.txt
+  build:
+    commands:
+      - python manage.py collectstatic --noinput
+      - python manage.py migrate
+  post_build:
+    commands:
+      - echo "Build completed!"
+
+artifacts:
+  baseDirectory: /path/to/your/static/files
+  files:
+    - '**/*'
+  discardPaths: yes
