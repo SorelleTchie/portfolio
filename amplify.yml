@@ -3,8 +3,8 @@ frontend:
   phases:
     preBuild:
       commands:
-        - python -m pip install --upgrade pip
-        - pip install -r requirements.txt
+        - python3.10 -m pip install --upgrade pip
+        - python3.10 -m pip install -r requirements.txt
     build:
       commands:
         - python manage.py collectstatic --noinput
