@@ -11,7 +11,7 @@ frontend:
         - python manage.py migrate
         - python manage.py runserver
   artifacts:
-    baseDirectory: build
+    baseDirectory: /mnt/c/Users/sorel/sorelletchie-software-engineer/portfolio/static
     files:
       - '**/*'
   cache:
