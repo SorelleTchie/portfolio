@@ -8,8 +8,8 @@ frontend:
       commands:
         - echo "No frontend build defined"
     artifacts:
-    files:
-      - 'no-artifacts-are-defined'
+      files:
+        - echo "no-artifacts-are-defined"
 
 
 backend:
