@@ -1,4 +1,13 @@
 version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - echo "No frontend build defined"
+    build:
+      commands:
+        - echo "No frontend build defined"
+        
 backend:
   phases:
     preBuild:
