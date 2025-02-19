@@ -7,6 +7,10 @@ frontend:
     build:
       commands:
         - echo "No frontend build defined"
+  artifacts:
+    baseDirectory: staticfiles
+    files:
+      - '**/*'
 
 backend:
   phases:
@@ -21,10 +25,6 @@ backend:
         - python3.10 manage.py migrate
         - echo "Collecting static files..."
         - python3.10 manage.py collectstatic --noinput
-  artifacts:
-    baseDirectory: staticfiles
-    files:
-      - '**/*'
  
 cache:
   paths:
