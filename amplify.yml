@@ -16,9 +16,11 @@ backend:
   phases:
     preBuild:
       commands:
+        - echo "clearing cached dependencies"
+        - rm -rf ~/.cache/pip
         - echo "Upgrading pip and installing dependencies..."
         - python3.10 -m pip install --upgrade pip
-        - pip install -r requirements.txt
+        - pip install  --no-cache-dir -r requirements.txt
     build:
       commands:
         - echo "Running migrations..."
