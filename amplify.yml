@@ -18,13 +18,12 @@ backend:
     build:
       commands:
         - echo "Running migrations..."
-        - python manage.py migrate
+        - python3.10 manage.py migrate
         - echo "Collecting static files..."
-        - python manage.py collectstatic --noinput
-        
-artifacts:
-  baseDirectory: staticfiles  # Directory where static files are collected
-  files:
+        - python3.10 manage.py collectstatic --noinput
+  artifacts:
+    baseDirectory: staticfiles
+    files:
       - '**/*'
  
 cache:
