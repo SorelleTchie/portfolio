@@ -152,6 +152,5 @@ RECIPIENT_EMAIL = env('RECIPIENT_EMAIL')
 
 
 
-import django_heroku
-django_heroku.settings(locals())
+
 
